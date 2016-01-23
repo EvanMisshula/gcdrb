@@ -1,0 +1,7 @@
+#+Title: A small python demo on reading poorly formatted
+#+Author: Evan Misshula
+
+* Graduate Center Digital Research Bootcamp
+
+I used this example to illustrate wrestling with data in python. In
+the file bithnames.py is a slightly more complete solution.
