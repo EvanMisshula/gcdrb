@@ -1,0 +1,115 @@
+* Cleaning Data
+** bio
+- I am the Project Manager of the NYC Tech Talent Pipeline @ Queens
+  College and an adjunct professor Computer Science in the MA in
+  Digital Forensics at CUNY John Jay where I teach network
+  security. As a student, I am finishing a PhD in Criminal Justice at
+  the CUNY Graduate Center where I am evaluating the effectiveness of
+  a public health intervention to reduce shootings in NYC. I was most
+  recently a subsitute lecturer in Computer Science and advisor to
+  Computer Science Club at John Jay.
+
+- I served as a CUNY John Jay Presidential Fellow where I worked on
+  the Misdemeanor Justice Project. I have been a winner of the
+  Provost's Digital Innovation Grant and a Digital Fellow. I was a
+  fellow at Data Science Summer Institute at the University of
+  Illinois Urbana-Champaigne funded by the Department of Homeland
+  Security in 2009 and a fellow at the Data Science for Social Good at
+  the University of Chicago in 2013 funded by the Eric and Wendy
+  Schmidt Family Foundation.
+
+Advocacy and charitable work
+
+- I mentor for the College Initiative, a project which helps people
+  returning from prison access higher education. I am an active member
+  of many meetups in NYC and have presented at the Emacs, D3js and NYC
+  Python meetup.  I was part of teams that won the ATT Wireless
+  Hackathon for Good in September 2015 and the HeatseakNYC's
+  HackForHeat in December 2015.
+** Statistics 
+*** Most theory concentrates on modeling vs practice most time is spent cleaning
+- Theory assumes the data is in the correct state for analysis
+*** Data problems
+- Correct format
+- has errors
+- incomplete
+- incorrectly labeled
+- missing codes
+*** Data cleaning should be considered a statistical operation
+*** Needs to be performed in a reproducible manner
+** Conceptual Framework
+1. Raw data -type checking and normalizing
+2. Technically correct data - fix and impute
+3. Consistent data - estimate, analyze and derive
+4. Statistical results -tabulate and plot
+5. Publishable result
+
+** Raw data
+- Data as it comes in
+  - May lack file headers
+  - Contain wrong data types
+  - Unknown or wrong character encoding
+** Technically correct
+- The data can be read into a Pandas Data Frame
+  - incomplete
+  - may have errors (age < 0)
+  - four year old may have driver's license
+
+* Why do you want to do this in Python?
+- Python is a widely used general-purpose, high-level programming
+  language. Its design philosophy emphasizes code readability, and its
+  syntax allows programmers to express concepts in fewer lines of code
+  than would be possible in languages such as C++ or Java. The
+  language provides constructs intended to enable clear programs on
+  both a small and large scale.
+* What are Python's limitations?
+- You don't want to use this for really big data. Many techniques for
+  large distributed data ..Hadoop, Spark (and there is PySpark).
+* What are the main libraries you will use in Python?
+- python has a great ecosystem
+- lots of libraries to work with all sorts of programs
+  - databases mysql, postgres, postgis
+- pandas the python dataframe
+* Things you need to know that are not strictly Python?
+- your file system
+- version control
+- system library vs. python binding
+- package management
+- regular expressions
+#+BEGIN_QUOTE
+Some people, when confronted with a problem, think “I know, I'll use regular expressions.”   Now they have two problems. 
+#+END_QUOTE
+* Can't learn all of this at once
+- It is better to be inefficient than unreproducible
+  - Don't worry about incorporating the most sophisticated techniques
+  - Save the data after each major step
+  - Never clean by hand...always script so you can redo
+  - Document for yourself in six months
+
+* resources in R and Python
+* What is a dataframe?
+  - Two-dimensional size-mutable, potentially heterogeneous tabular
+    data structure with labeled axes (rows and columns). Arithmetic
+    operations align on both row and column labels. Can be thought of
+    as a dict-like container for Series objects. The primary pandas
+    data structure.
+* What is a Series?
+  - One-dimensional ndarray with axis labels (including time series).
+  - An array object represents a multidimensional, homogeneous array
+    of fixed-size items. An associated data-type object describes the
+    format of each element in the array (its byte-order, how many
+    bytes it occupies in memory, whether it is an integer, a floating
+    point number, or something else, etc.)
+
+* What are python types
+  - Boolean
+  - Numeric (int, float, long, complex)
+  - Strings, Unicode strings, lists, tuples, bytearrays, buffers, and xrange objects
+
+* Construct some data in Pandas
+http://pandas.pydata.org/pandas-docs/stable/10min.html
+
+https://cran.r-project.org/doc/contrib/de_Jonge+van_der_Loo-Introduction_to_data_cleaning_with_R.pdf
+http://nbviewer.jupyter.org/github/jvns/pandas-cookbook/blob/v0.1/cookbook/Chapter%207%20-%20Cleaning%20up%20messy%20data.ipynb
+http://columbia-applied-data-science.github.io/appdatasci.pdf
+http://web.mit.edu/govdata/data_wrangling.pdf
